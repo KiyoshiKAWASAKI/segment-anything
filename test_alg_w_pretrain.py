@@ -54,6 +54,6 @@ raw_image = Image.open(test_img_path).convert("RGB")
 inputs = processor(raw_image, return_tensors="pt").to(device)
 image_embeddings = model.get_image_embeddings(inputs["pixel_values"])
 
-
+# 
 
 
