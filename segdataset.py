@@ -173,5 +173,6 @@ class SegmentationDataset(VisionDataset):
 
             # add ground truth segmentation
             inputs["ground_truth_mask"] = ground_truth_mask
+            inputs["img_path"] = image_path.__str__()
 
             return inputs
